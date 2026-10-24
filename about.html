@@ -45,6 +45,15 @@
 .cn-about-polish-strip p{margin:0;color:#5f6650;letter-spacing:.14em;text-transform:uppercase;font-size:11px;font-weight:700}
 .cn-about-polish-strip strong{font-size:clamp(17px,2vw,25px);font-weight:500;line-height:1.35;color:#302c28}
 @media(max-width:760px){.cn-about-story{align-items:stretch!important}.cn-about-polish-strip{margin:0 20px 38px;flex-direction:column;align-items:flex-start}}
+</style><style id="cn-process-card-effects">
+.cn-about-process-cards>div{position:relative;isolation:isolate;overflow:hidden;transition:transform .32s cubic-bezier(.2,.8,.2,1),box-shadow .32s ease,border-color .32s ease!important;will-change:transform}
+.cn-about-process-cards>div::before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,#7c8265,#b77b5c);transform:scaleX(0);transform-origin:left;transition:transform .38s ease}
+.cn-about-process-cards>div:hover{transform:translateY(-7px);border-color:#9ba188!important;box-shadow:0 16px 32px rgba(48,44,40,.11)!important}
+.cn-about-process-cards>div:hover::before{transform:scaleX(1)}
+.cn-about-process-cards>div .material-symbols-outlined{transition:transform .32s ease,color .32s ease}
+.cn-about-process-cards>div:hover .material-symbols-outlined{transform:rotate(-9deg) scale(1.12)}
+@media(hover:none){.cn-about-process-cards>div:active{transform:translateY(-2px)}}
+@media(prefers-reduced-motion:reduce){.cn-about-process-cards>div,.cn-about-process-cards>div::before,.cn-about-process-cards>div .material-symbols-outlined{transition:none!important}.cn-about-process-cards>div:hover{transform:none}}
 </style></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-secondary/20 selection:text-secondary"><header class="cn-header"><div class="cn-header-content"><a class="cn-brand" href="index.html">CLAY NEST WHISPERS<small>HANDMADE ART · ΓΙΑΝΝΗΣ ΣΩΤΗΡΟΠΟΥΛΟΣ</small></a><nav class="cn-links" aria-label="Κύρια πλοήγηση"><a href="index.html" >Αρχική</a><a href="gallery.html" >Η Συλλογή</a><a href="about.html" aria-current="page">Ο Δημιουργός</a><a href="contact.html" >Επικοινωνία</a><a class="cn-social" href="https://www.instagram.com/claynest_whispers/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></nav><button type="button" class="cn-toggle" aria-label="Άνοιγμα μενού" aria-expanded="false" aria-controls="cn-mobile"><span class="material-symbols-outlined">menu</span></button></div><nav class="cn-mobile" id="cn-mobile" hidden aria-label="Μενού κινητού"><a href="index.html" >Αρχική</a><a href="gallery.html" >Η Συλλογή</a><a href="about.html" aria-current="page">Ο Δημιουργός</a><a href="contact.html" >Επικοινωνία</a><a href="https://www.instagram.com/claynest_whispers/" rel="noopener noreferrer" target="_blank">Instagram ↗</a></nav></header><main class="flex flex-col relative w-full pt-20 bg-surface flex-grow"><div class="flex flex-col w-full">
 <!-- 1. Hero Header -->
 <section class="cn-about-intro px-margin pt-space-lg pb-space-md flex flex-col gap-space-xs">
