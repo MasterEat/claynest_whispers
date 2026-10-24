@@ -110,12 +110,16 @@
   const modal = document.getElementById('art-detail-modal');
   const sheet = document.getElementById('art-detail-sheet');
 
+  let previousFocus = null;
   function openArtDetail() {
     if (!modal || !sheet) return;
+    previousFocus = document.activeElement;
     modal.classList.remove('opacity-0', 'pointer-events-none');
     modal.classList.add('opacity-100', 'pointer-events-auto');
     sheet.classList.remove('translate-y-full');
     sheet.classList.add('translate-y-0');
+    document.body.style.overflow = 'hidden';
+    modal.querySelector('button')?.focus();
   }
 
   function closeArtDetail() {
@@ -124,7 +128,21 @@
     modal.classList.add('opacity-0', 'pointer-events-none');
     sheet.classList.remove('translate-y-0');
     sheet.classList.add('translate-y-full');
+    document.body.style.overflow = '';
+    previousFocus?.focus?.();
   }
+
+  document.addEventListener('keydown', (event) => {
+    if (!modal || !modal.classList.contains('opacity-100')) return;
+    if (event.key === 'Escape') closeArtDetail();
+    if (event.key === 'Tab') {
+      const controls = [...modal.querySelectorAll('a[href],button:not([disabled]),input:not([disabled]),textarea:not([disabled])')].filter(el => el.getClientRects().length);
+      if (!controls.length) return;
+      const first = controls[0], last = controls[controls.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    }
+  });
 
   if (modal) {
     modal.addEventListener('click', (e) => {
