@@ -20,9 +20,18 @@
 @media(max-width:1020px){.cn-featured-grid,.cn-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:750px){.cn-hero{grid-template-columns:1fr!important;row-gap:30px;padding:34px 20px 48px!important}.cn-hero .cn-hero-image{justify-self:center;max-width:460px}.cn-hero .cn-hero-image>img{height:clamp(260px,65vw,380px)!important}.cn-hero .cn-hero-ctas{flex-direction:column!important}.cn-featured-grid,.cn-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}.cn-featured{padding-inline:18px!important}.cn-featured-grid article .h-64{height:190px!important}}
 @media(max-width:460px){.cn-featured-grid,.cn-gallery-grid{grid-template-columns:1fr!important}.cn-featured-grid article .h-64{height:240px!important}.cn-gallery-grid article{max-width:420px;margin-inline:auto;width:100%}}
+</style><style id="cn-contact-compact">
+.cn-contact-wrap{max-width:1180px;width:100%;margin:0 auto;display:grid!important;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);column-gap:clamp(28px,5vw,76px);padding:clamp(40px,6vw,82px) clamp(20px,5vw,65px)!important;align-items:start}
+.cn-contact-intro{grid-column:1;grid-row:1;padding:0!important}
+.cn-contact-social{grid-column:1;grid-row:2;padding:18px 0!important}
+.cn-contact-form-section{grid-column:2;grid-row:1 / span 3;padding:0!important}
+.cn-contact-form-section>div{box-shadow:none!important;border:1px solid #e6ddd3}
+.cn-contact-social img{width:56px!important;height:56px!important;object-fit:cover!important}
+@media(max-width:800px){.cn-contact-wrap{grid-template-columns:1fr!important;padding:30px 20px 60px!important}.cn-contact-intro,.cn-contact-social,.cn-contact-form-section{grid-column:1!important;grid-row:auto!important}.cn-contact-form-section{margin-top:18px}}
 </style></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-secondary/20 selection:text-secondary"><header class="cn-header"><div class="cn-header-content"><a class="cn-brand" href="index.html">CLAY NEST WHISPERS<small>HANDMADE ART · ΓΙΑΝΝΗΣ ΣΩΤΗΡΟΠΟΥΛΟΣ</small></a><nav class="cn-links" aria-label="Κύρια πλοήγηση"><a href="index.html" >Αρχική</a><a href="gallery.html" >Η Συλλογή</a><a href="about.html" >Ο Δημιουργός</a><a href="contact.html" aria-current="page">Επικοινωνία</a><a class="cn-social" href="https://www.instagram.com/claynest_whispers/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></nav><button type="button" class="cn-toggle" aria-label="Άνοιγμα μενού" aria-expanded="false" aria-controls="cn-mobile"><span class="material-symbols-outlined">menu</span></button></div><nav class="cn-mobile" id="cn-mobile" hidden aria-label="Μενού κινητού"><a href="index.html" >Αρχική</a><a href="gallery.html" >Η Συλλογή</a><a href="about.html" >Ο Δημιουργός</a><a href="contact.html" aria-current="page">Επικοινωνία</a><a href="https://www.instagram.com/claynest_whispers/" rel="noopener noreferrer" target="_blank">Instagram ↗</a></nav></header><main class="flex flex-col relative w-full pt-20 bg-surface flex-grow"><div class="flex flex-col w-full pb-safe">
+<div class="cn-contact-wrap">
 <!-- Organic Header Section -->
-<section class="px-margin pt-space-lg pb-space-md flex flex-col gap-space-sm relative overflow-hidden">
+<section class="cn-contact-intro px-margin pt-space-lg pb-space-md flex flex-col gap-space-sm relative overflow-hidden">
 <div class="inline-flex items-center gap-space-xs self-start px-3 py-1 rounded-full bg-surface-container-high text-secondary">
 <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
 <span class="font-label-sm text-label-sm uppercase tracking-widest font-semibold">ΕΠΙΚΟΙΝΩΝΙΑ</span>
@@ -35,12 +44,12 @@
     </p>
 <!-- Subtle ceramic pebble badge -->
 <div class="flex items-center gap-2 mt-1">
-<span class="font-label-md text-label-md text-outline">Χρόνος απόκρισης:</span>
-<span class="font-label-md text-label-md text-primary font-medium">1-2 εργάσιμες ημέρες</span>
+<span class="font-label-md text-label-md text-outline">Επικοινωνία:</span>
+<span class="font-label-md text-label-md text-primary font-medium">μέσω Instagram</span>
 </div>
 </section>
 <!-- Direct Social / Studio Channel Card -->
-<section class="px-margin py-space-xs">
+<section class="cn-contact-social px-margin py-space-xs">
 <a class="group flex items-center justify-between p-space-md bg-surface-container-low rounded-xl shadow-sm transition-all duration-300 hover:bg-surface-container" href="https://www.instagram.com/claynest_whispers/" rel="noopener noreferrer" target="_blank">
 <div class="flex items-center gap-space-md min-w-0">
 <div class="relative w-14 h-14 rounded-full overflow-hidden shrink-0 shadow-sm">
@@ -64,7 +73,7 @@
 </a>
 </section>
 <!-- Contact Form Card -->
-<section class="px-margin py-space-md">
+<section class="cn-contact-form-section px-margin py-space-md">
 <div class="bg-surface-container-lowest rounded-xl p-space-md sm:p-space-lg shadow-sm flex flex-col gap-space-md">
 <div class="flex flex-col gap-1 pb-space-xs">
 <h2 class="font-headline-sm text-headline-sm text-on-surface">Φόρμα Ενδιαφέροντος</h2>
@@ -166,7 +175,7 @@
         </button>
 </div>
 </div>
-</section>
+</section></div>
 <!-- Location & Studio Note Footer Component -->
 <section class="px-margin pt-space-xs pb-space-xl flex flex-col items-center text-center gap-space-xs">
 <div class="flex items-center gap-2 text-primary">
