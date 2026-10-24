@@ -104,19 +104,8 @@
 </div>
 </div>
 <script>
-  // Filter pills interaction
-  const pills = document.querySelectorAll('.category-pill');
-  pills.forEach(pill => {
-    pill.addEventListener('click', () => {
-      pills.forEach(p => {
-        p.classList.remove('bg-primary', 'text-on-primary', 'active');
-        p.classList.add('bg-surface-container-high', 'text-on-surface-variant');
-      });
-      pill.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
-      pill.classList.add('bg-primary', 'text-on-primary', 'active');
-    });
-  });
-
+  // Category labels remain visible; filtering is disabled until real artworks are tagged.
+  document.querySelectorAll('.category-pill').forEach((pill,i)=>{if(i>0){pill.disabled=true;pill.title='Οι κατηγορίες θα ενεργοποιηθούν με την πραγματική συλλογή';pill.setAttribute('aria-label',pill.textContent.trim()+' — σύντομα');pill.classList.add('opacity-50','cursor-not-allowed');}});
   // Modal inspection sheet controls
   const modal = document.getElementById('art-detail-modal');
   const sheet = document.getElementById('art-detail-sheet');
