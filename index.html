@@ -26,6 +26,26 @@
 /* Mobile refinements for the creative process panel */
 @media(max-width:600px){.cn-process{box-sizing:border-box;width:calc(100% - 28px)!important;margin:24px auto 34px!important;padding:20px 16px!important;border-radius:18px;gap:18px!important}.cn-process h2{font-size:clamp(24px,7vw,31px)!important;line-height:1.23!important;overflow-wrap:break-word}.cn-process-body{display:flex!important;flex-direction:column!important;gap:16px!important}.cn-process-photo{width:100%!important;height:220px!important;min-height:0!important;max-height:none!important;border-radius:12px}.cn-process-photo img{display:block;width:100%!important;height:100%!important;object-fit:cover!important}.cn-process-cards{width:100%;gap:12px!important}.cn-process-cards>div{box-sizing:border-box;width:100%;padding:16px!important;min-width:0;border-radius:12px}.cn-process-cards p{font-size:14px!important;line-height:1.6!important}.cn-process-cards>div:hover{transform:none!important}}
 @media(max-width:360px){.cn-process{width:calc(100% - 20px)!important;padding:16px 12px!important}.cn-process-photo{height:185px!important}.cn-process h2{font-size:23px!important}}
+</style><style id="cn-materials-feature-css">
+.cn-materials{box-sizing:border-box;width:calc(100% - 40px);max-width:1160px;margin:25px auto 54px;padding:clamp(25px,4vw,48px);border:1px solid #dcd5c7;background:#f5f1e9;border-radius:22px}
+.cn-materials-heading{display:grid;grid-template-columns:1.2fr .8fr;align-items:end;gap:30px;margin-bottom:26px}
+.cn-materials-eyebrow{font-size:11px;font-weight:700;letter-spacing:.18em;color:#777b61}
+.cn-materials h2{font-size:clamp(26px,3vw,38px);line-height:1.18;letter-spacing:-.03em;color:#302c28;margin:10px 0 0}
+.cn-materials-heading p{color:#665e53;font-size:15px;line-height:1.8;max-width:340px}
+.cn-materials-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.cn-materials-item{padding:clamp(18px,2vw,27px);background:#fffdf9;border:1px solid #e7e0d4;border-radius:16px;transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
+.cn-materials-item>.material-symbols-outlined{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:#ecede3;color:#5f6650;font-size:23px;margin-bottom:20px;transition:transform .28s ease}
+.cn-materials-item h3{color:#302c28;font-size:18px;line-height:1.3;font-weight:650;margin:0 0 9px}
+.cn-materials-item p{color:#676057;font-size:14px;line-height:1.7;margin:0}
+.cn-materials-item:hover{transform:translateY(-5px);border-color:#a1a88a;box-shadow:0 12px 28px rgba(48,44,40,.09)}
+.cn-materials-item:hover>.material-symbols-outlined{transform:rotate(-7deg)}
+.cn-materials-link{display:inline-flex;align-items:center;gap:9px;margin-top:27px;color:#5f6650;font-size:14px;font-weight:700;text-decoration:none;border-bottom:1px solid #a5a995;padding-bottom:5px}
+.cn-materials-link:hover{color:#302c28}
+.cn-materials-link>.material-symbols-outlined{font-size:18px;transition:transform .2s ease}
+.cn-materials-link:hover>.material-symbols-outlined{transform:translateX(4px)}
+@media(max-width:800px){.cn-materials-heading{grid-template-columns:1fr;gap:10px}.cn-materials-grid{grid-template-columns:1fr}.cn-materials-item{padding:19px}.cn-materials-item>.material-symbols-outlined{margin-bottom:12px}.cn-materials-heading p{max-width:none}}
+@media(max-width:520px){.cn-materials{width:calc(100% - 28px);margin:20px auto 36px;padding:20px 16px;border-radius:17px}.cn-materials h2{font-size:27px}}
+@media(prefers-reduced-motion:reduce){.cn-materials-item,.cn-materials-item>.material-symbols-outlined,.cn-materials-link>.material-symbols-outlined{transition:none!important}.cn-materials-item:hover{transform:none}}
 </style></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-secondary/20 selection:text-secondary"><header class="cn-header"><div class="cn-header-content"><a class="cn-brand" href="index.html">CLAY NEST WHISPERS<small>HANDMADE ART · ΓΙΑΝΝΗΣ ΣΩΤΗΡΟΠΟΥΛΟΣ</small></a><nav class="cn-links" aria-label="Κύρια πλοήγηση"><a href="index.html" aria-current="page">Αρχική</a><a href="gallery.html" >Η Συλλογή</a><a href="about.html" >Ο Δημιουργός</a><a href="contact.html" >Επικοινωνία</a><a class="cn-social" href="https://www.instagram.com/claynest_whispers/" target="_blank" rel="noopener noreferrer"><svg class="cn-instagram-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram ↗</span></a></nav><button type="button" class="cn-toggle" aria-label="Άνοιγμα μενού" aria-expanded="false" aria-controls="cn-mobile"><span class="material-symbols-outlined">menu</span></button></div><nav class="cn-mobile" id="cn-mobile" hidden aria-label="Μενού κινητού"><a href="index.html" aria-current="page">Αρχική</a><a href="gallery.html" >Η Συλλογή</a><a href="about.html" >Ο Δημιουργός</a><a href="contact.html" >Επικοινωνία</a><a href="https://www.instagram.com/claynest_whispers/" rel="noopener noreferrer" target="_blank"><svg class="cn-instagram-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram ↗</span></a></nav></header><main class="flex flex-col relative w-full pt-20 bg-surface flex-grow"><div class="flex flex-col w-full">
 <!-- Editorial Hero Section -->
 <section class="cn-hero flex flex-col px-margin pt-space-md pb-space-lg">
@@ -159,39 +179,19 @@
 </div>
 </div>
 </section>
-<!-- About Preview Section -->
-<section class="px-margin py-space-lg flex flex-col gap-space-md">
-<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-sm shadow-sm">
-<div class="flex items-center gap-space-sm">
-<div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed shadow-sm flex-shrink-0">
-<span class="material-symbols-outlined text-[30px]">brush</span>
-</div>
-<div class="flex flex-col">
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold">Ο ΔΗΜΙΟΥΡΓΟΣ</span>
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Γιάννης Σωτηρόπουλος</h3>
-</div>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-        Η κεραμική γλυπτική για μένα αποτελεί έναν διαλογισμό. Εστιάζω στον δεσμό του ανθρώπου με τη γη, δημιουργώντας έργα που ψιθυρίζουν ιστορίες ηρεμίας, αναγέννησης και βαθιάς επαφής με το φυσικό τοπίο.
-      </p>
-<div class="pt-space-xs">
-<a class="inline-flex items-center justify-center w-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg py-3 px-6 rounded-lg transition-colors text-center shadow-sm" data-path="artist-profile" href="about.html">
-          Περισσότερα για τον Δημιουργό
-        </a>
-</div>
-</div>
-</section>
-<!-- Curated Quote Banner -->
-<section class="px-margin py-space-md">
-<div class="bg-secondary-fixed/50 p-space-md rounded-xl flex flex-col items-center text-center">
-<span class="material-symbols-outlined text-secondary text-[28px] mb-2 opacity-80">format_quote</span>
-<blockquote class="font-headline-sm text-headline-sm text-on-secondary-fixed font-medium italic leading-snug">
-        «Η τέχνη δεν μιμείται απλώς τη φύση, αφουγκράζεται τη σιωπή της.»
-      </blockquote>
-<span class="font-label-sm text-label-sm text-on-secondary-fixed-variant mt-2 uppercase tracking-widest font-semibold">
-        Γιάννης Σωτηρόπουλος
-      </span>
-</div>
+<!-- Materials and process feature: distinct from the dedicated About page -->
+<section class="cn-materials" aria-labelledby="cn-materials-title">
+  <div class="cn-materials-heading">
+    <div><span class="cn-materials-eyebrow">Η ΟΥΣΙΑ ΤΗΣ ΔΗΜΙΟΥΡΓΙΑΣ</span>
+    <h2 id="cn-materials-title">Η ομορφιά κρύβεται στις λεπτομέρειες.</h2></div>
+    <p>Μικρά φυσικά ευρήματα και πηλός συναντιούνται σε συνθέσεις που δεν επαναλαμβάνονται.</p>
+  </div>
+  <div class="cn-materials-grid">
+    <article class="cn-materials-item"><span class="material-symbols-outlined" aria-hidden="true">forest</span><div><h3>Η φύση ως έμπνευση</h3><p>Σχήματα, υφές και στοιχεία που ανακαλύπτονται σε κάθε διαδρομή.</p></div></article>
+    <article class="cn-materials-item"><span class="material-symbols-outlined" aria-hidden="true">handyman</span><div><h3>Η αφή του πηλού</h3><p>Το χειροποίητο αποτύπωμα δίνει χαρακτήρα σε κάθε δημιουργία.</p></div></article>
+    <article class="cn-materials-item"><span class="material-symbols-outlined" aria-hidden="true">interests</span><div><h3>Μοναδικές συνθέσεις</h3><p>Τα διαφορετικά υλικά βρίσκουν τη θέση τους σε ένα καινούργιο σύνολο.</p></div></article>
+  </div>
+  <a class="cn-materials-link" href="gallery.html">Ανακαλύψτε τα έργα <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
 </section>
 <!-- Final CTA Section -->
 <section class="px-margin pt-space-md pb-space-xl" style="width:100%;max-width:950px;margin-inline:auto;">
